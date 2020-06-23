@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SwiftKeychainWrapper-debug.module": ["<SwiftKeychainWrapper-debug.module>"]
+  "SwiftKeychainWrapperPackageTests-debug.test": ["<SwiftKeychainWrapperPackageTests-debug.test>"]
+  "SwiftKeychainWrapperTests-debug.module": ["<SwiftKeychainWrapperTests-debug.module>"]
+  "main": ["<SwiftKeychainWrapper-debug.module>"]
+  "test": ["<SwiftKeychainWrapper-debug.module>","<SwiftKeychainWrapperPackageTests-debug.test>","<SwiftKeychainWrapperTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/":
+    is-directory-structure: true
+  "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Tests/SwiftKeychainWrapperTests/":
+    is-directory-structure: true
+commands:
+  "<SwiftKeychainWrapper-debug.module>":
+    tool: phony
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.swiftmodule"]
+    outputs: ["<SwiftKeychainWrapper-debug.module>"]
+
+  "<SwiftKeychainWrapperPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperPackageTests.xctest/Contents/MacOS/SwiftKeychainWrapperPackageTests"]
+    outputs: ["<SwiftKeychainWrapperPackageTests-debug.test>"]
+
+  "<SwiftKeychainWrapperTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/SwiftKeychainWrapperTests.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/XCTestManifests.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.swiftmodule"]
+    outputs: ["<SwiftKeychainWrapperTests-debug.module>"]
+
+  "C.SwiftKeychainWrapper-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainItemAccessibility.swift","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift"]
+    outputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftKeychainWrapper"
+    module-output-path: "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.swiftmodule"
+    import-paths: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build"
+    objects: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.12","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/SwiftKeychainWrapper-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk","-target","x86_64-apple-ios13.0-simulator"]
+    sources: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainItemAccessibility.swift","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "C.SwiftKeychainWrapperPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/SwiftKeychainWrapperTests.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperPackageTests.xctest/Contents/MacOS/SwiftKeychainWrapperPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperPackageTests.xctest/Contents/MacOS/SwiftKeychainWrapperPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug","-o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperPackageTests.xctest/Contents/MacOS/SwiftKeychainWrapperPackageTests","-module-name","SwiftKeychainWrapperPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.12","-Xlinker","-add_ast_path","-Xlinker","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk","-target","x86_64-apple-ios13.0-simulator","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.SwiftKeychainWrapperTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Tests/SwiftKeychainWrapperTests/SwiftKeychainWrapperTests.swift","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Tests/SwiftKeychainWrapperTests/XCTestManifests.swift","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.swiftmodule"]
+    outputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/SwiftKeychainWrapperTests.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/XCTestManifests.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftKeychainWrapperTests"
+    module-output-path: "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.swiftmodule"
+    import-paths: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build"
+    objects: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/SwiftKeychainWrapperTests.swift.o","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapperTests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.12","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j12","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk","-target","x86_64-apple-ios13.0-simulator"]
+    sources: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Tests/SwiftKeychainWrapperTests/SwiftKeychainWrapperTests.swift","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Tests/SwiftKeychainWrapperTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 12
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Tests/SwiftKeychainWrapperTests/","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Package.swift","/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

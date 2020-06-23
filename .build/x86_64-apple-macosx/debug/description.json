@@ -1,0 +1,25 @@
+{
+  "allExecutables" : [
+
+  ],
+  "builtTestProducts" : [
+    {
+      "packageName" : "SwiftKeychainWrapper",
+      "productName" : "SwiftKeychainWrapperPackageTests",
+      "testBinary" : "\/Users\/lokesh\/Documents\/repo\/ios\/SwiftKeychainWrapper\/.build\/x86_64-apple-macosx\/debug\/SwiftKeychainWrapperPackageTests.xctest\/Contents\/MacOS\/SwiftKeychainWrapperPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "rootExecutables" : [
+
+  ],
+  "swiftTargetMap" : {
+    "C.SwiftKeychainWrapper-debug.module" : "SwiftKeychainWrapper",
+    "C.SwiftKeychainWrapperTests-debug.module" : "SwiftKeychainWrapperTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

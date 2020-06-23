@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/master.swiftdeps"
+  },
+  "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainItemAccessibility.swift": {
+    "dependencies": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.d",
+    "object": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.swift.o",
+    "swiftmodule": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility~partial.swiftmodule",
+    "swift-dependencies": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainItemAccessibility.swiftdeps"
+  },
+  "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift": {
+    "dependencies": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.d",
+    "object": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.swift.o",
+    "swiftmodule": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper~partial.swiftmodule",
+    "swift-dependencies": "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/KeychainWrapper.swiftdeps"
+  }
+}

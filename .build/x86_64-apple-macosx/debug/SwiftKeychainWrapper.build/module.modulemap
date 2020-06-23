@@ -1,0 +1,4 @@
+module SwiftKeychainWrapper {
+    header "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/.build/x86_64-apple-macosx/debug/SwiftKeychainWrapper.build/SwiftKeychainWrapper-Swift.h"
+    requires objc
+}

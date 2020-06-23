@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "97d1b0ea6aa28094e9b6f0c5883dec35"
+build_time: [1592909862, 900260000]
+inputs:
+  "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainItemAccessibility.swift": [1592854515, 44540805]
+  "/Users/lokesh/Documents/repo/ios/SwiftKeychainWrapper/SwiftKeychainWrapper/KeychainWrapper.swift": [1592854515, 44869871]
